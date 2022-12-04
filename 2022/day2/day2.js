@@ -27,13 +27,13 @@ function checkWinner(opponent, me) {
             me = opponent == "A" ? "X"
             : opponent == "B" ? "Y"
             : opponent == "C" ? "Z"
-            : console.log("error");;
+            : console.log("error");
             break;
         case "Z":
             me = opponent == "A" ? "Y"
             : opponent == "B" ? "Z"
             : opponent == "C" ? "X"
-            : console.log("error");;
+            : console.log("error");
             break;
         default:
             break;
@@ -44,17 +44,17 @@ function checkWinner(opponent, me) {
         return me == "Y" ? 8 
         : me == "X" ? 4
         : me == "Z" ? 3
-        : console.log("error");;
+        : console.log("error");
     case "B":
         return me == "Y" ? 5 
         : me == "X" ? 1
         : me == "Z" ? 9
-        : console.log("error");;
+        : console.log("error");
     case "C":
         return me == "Y" ? 2
         : me == "X" ? 7
         : me == "Z" ? 6
-        : console.log("error");;
+        : console.log("error");
     default:
         break;
    }
