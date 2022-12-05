@@ -9,11 +9,11 @@ let alphabet = " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 function partone(rucksacks) {
     let priorities = 0
-    
+
     for (let i = 0; i < rucksacks.length; i++) {
-        let first = rucksacks[i].slice(0, rucksacks[i].length / 2 ) 
-        let last = rucksacks[i].slice(rucksacks[i].length / 2 ) 
-        let itemType = findItemType(0, first, last, 0)
+        let firstHalf = rucksacks[i].slice(0, rucksacks[i].length / 2 ) 
+        let lastHalf = rucksacks[i].slice(rucksacks[i].length / 2 ) 
+        let itemType = findItemType(0, firstHalf, lastHalf, 0)
 
         priorities = priorities + Number(alphabet.indexOf(itemType))
     }
